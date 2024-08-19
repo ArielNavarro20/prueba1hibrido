@@ -1,0 +1,31 @@
+
+figure {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px; 
+    height: auto;
+    
+  }
+  
+  ion-button {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --padding-top: 5px;
+    --padding-bottom: 5px;
+    --border-radius: 4px;
+    font-size: 14px; 
+    margin-top: 10px; 
+    
+  }
+  
+  ion-item {
+    margin-bottom: 20px; 
+  }
+  
+  ion-button:hover {
+    --background: #219909; /* Color de fondo */
+  }
+  
+  ion-button:active {
+    --background: #05271d; /* Color de fondo al click */
+  }

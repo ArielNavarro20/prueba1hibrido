@@ -1,0 +1,22 @@
+
+<ion-content>
+  
+<form>
+  
+  <ion-item>
+    <ion-img src="assets/icon/circulo.png" alt="Círculo" class="figure"></ion-img>
+    <ion-label position="floating">Radio</ion-label>
+    <ion-input 
+      [(ngModel)]="txtRadio" 
+      type="number" 
+      fill="outline" 
+      name="radio">
+    </ion-input>
+  </ion-item>
+
+  <ion-button expand="normal" (click)="calcularPerimetro()">Calcular</ion-button>
+</form>
+
+<ion-text *ngIf="perimetroValida()">El perímetro del círculo es: {{perimetro.toFixed(2)}}</ion-text>
+
+</ion-content>

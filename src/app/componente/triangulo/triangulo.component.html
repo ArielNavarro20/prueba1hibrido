@@ -1,0 +1,43 @@
+<!-- triangulo.component.html -->
+
+<ion-content>
+
+<form>
+  <ion-item>
+    <ion-img src="assets/icon/triangulof.png" alt="Triángulo" class=""></ion-img>
+    <ion-label position="floating">Lado A</ion-label>
+    <ion-input 
+      [(ngModel)]="ladoA" 
+      type="number" 
+      fill="outline" 
+      name="ladoA">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Lado B</ion-label>
+    <ion-input 
+      [(ngModel)]="ladoB" 
+      type="number" 
+      fill="outline" 
+      name="ladoB">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Lado C</ion-label>
+    <ion-input 
+      [(ngModel)]="ladoC" 
+      type="number" 
+      fill="outline" 
+      name="ladoC">
+    </ion-input>
+  </ion-item>
+
+  <ion-button expand="normal" (click)="calcularDatos()">Calcular</ion-button>
+</form>
+
+<ion-text *ngIf="datosValido()">El perímetro del triángulo es: {{perimetro.toFixed(2)}}</ion-text>
+<ion-text *ngIf="datosValido()">El área del triángulo es: {{area.toFixed(2)}}</ion-text>
+
+</ion-content>
